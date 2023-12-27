@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Manager</title>
+    {% load static %} 
+    <link rel="stylesheet" href= "{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src= "{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://img.freepik.com/free-vector/man-holding-clock-time-management-concept_23-2148823171.jpg"
+        class="background-image"
+        alt="..."
+      />
+      <h1>Task Manager</h1>
+      {% block content %} {% endblock %}
+    </div>
+  </body>
+</html>

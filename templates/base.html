@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Manager</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .background-image {
+        width: 48%;
+        max-height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        flex-shrink: 0;
+      }
+
+      h1 {
+        font-size: 100px;
+        text-align: left;
+        color: darkslateblue;
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://img.freepik.com/free-vector/man-holding-clock-time-management-concept_23-2148823171.jpg"
+        class="background-image"
+        alt="..."
+      />
+      <h1>Task Manager</h1>
+      {% block content %} {% endblock %}
+    </div>
+  </body>
+</html>
